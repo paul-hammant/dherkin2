@@ -11,6 +11,10 @@ With this implementation the actual step implementations require a Completer as 
 completed at the end of each test step. The reason is that the implementation uses the LibraryMirror.invoke method
 that cannot be used with await.
 
+Status
+======
+There are issues with Dherkin2's reflection logic presently. It may be possbile to overcome these but there the Flutter team (Dart's major use) are suggesting [that reflection is deactivated](https://flutter.io/json/#is-there-a-gsonjacksonmoshi-equivalent-in-flutter) :-(
+
 Usage
 =====
 Dherkin2 can be executed in a number of ways.
